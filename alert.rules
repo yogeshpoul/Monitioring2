@@ -1,0 +1,11 @@
+groups:
+  - name: docker-alerts
+    rules:
+      - alert: DockerDown
+        expr: up{job="docker"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Docker container is down"
+          description: "The Docker container on {{ $labels.instance }} is down for 1 minute."
