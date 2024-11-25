@@ -1,11 +1,11 @@
 groups:
-  - name: docker-alerts
+  - name: NodeApp-alerts
     rules:
-      - alert: DockerDown
-        expr: up{job="docker"} == 0
+      - alert: NodeAppDown
+        expr: up{job="prometheus"} == 0
         for: 1m
         labels:
           severity: critical
         annotations:
-          summary: "Docker container is down"
-          description: "The Docker container on {{ $labels.instance }} is down for 1 minute."
+          summary: "NodeApp container is down"
+          description: "The NodeApp container on {{ $labels.instance }} is down for 1 minute."
