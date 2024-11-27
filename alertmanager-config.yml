@@ -4,11 +4,11 @@ route:
 receiver:
   - name: admin
     email_config:
-     - to : "yogesh.poul@sphinxworldbiz.com"
-      from : "vaibhav.kunjir@sphinxworldbiz.com"
-      smarthost: smtp.office365.com:587
-      auth_username: "vaibhav.kunjir@sphinxworldbiz.com"
-      auth_identity : "vaibhav.kunjir@sphinxworldbiz.com"
-      auth_password: "16-digit password"
+     - to : "yogeshpoul9999@gmail.com"
+      from : "vaibhavkunjir2800@gmail.com"
+      smarthost: smtp.gmail.com:587
+      auth_username: "vaibhavkunjir2800@gmail.com"
+      auth_identity : "vaibhavkunjir2800@gmail.com"
+      auth_password: "uxpe pudb dsay pxri"
          
 
